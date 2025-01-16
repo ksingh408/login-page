@@ -39,7 +39,24 @@ input {
     margin-bottom: 15px;
     border: 1px solid #cccccc;
     border-radius: 4px;
-    font-size: 14px;
+    font-size: 20px;
+}
+
+#name-error{
+    text-align: left;
+    display: none;
+    color: red;
+}
+#email-error{
+    text-align: left;
+    display: none;
+    color: red;
+}
+
+#password-error{
+    text-align: left;
+    display: none;
+    color: red;
 }
 
 button {

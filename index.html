@@ -8,19 +8,28 @@
 </head>
 <body>
     <div class="login-container">
-        <h1>Login</h1>
-        <form action="#" method="post">
-            <label for="name">Enter Name:</label>
-            <input type="text" id="name" name="name" placeholder="Your Name" required>
+        <h1>Login From</h1>
+        <form name="myForm" onsubmit="return validateForm()" >
+           <label for="name"><sup>*</sup>Enter Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" >
+            <p id="name-error" class="error-message">please enter Your name</p>
+            
 
-            <label for="email">Enter Mail:</label>
-            <input type="email" id="email" name="email" placeholder="Your Email" required>
+           <label for="email"><sup>*</sup>Enter Mail:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email">
+           <p2 id="email-error" class="error-message">please enter Your email</p2>
+        
 
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" placeholder="Your Password" required>
+           <label for="password"><sup>*</sup>Password:</label>
+            <input type="password" id="password" name="password" placeholder="Your Password">
+            <p3 id="password-error" class="error-message">please enter Your passwoed</p3>
+          
 
-            <button type="submit">Submit</button>
+            <button type="submit" name="submit">Submit</button>
         </form>
     </div>
+
+
+    <script src="script.js"></script>
 </body>
 </html>
